@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/css/Header.css";
 import headersData from "./data/data-header";
 
 function Header(){
 
     const [imgToShow, setImgToShow] = useState(0);
+    const [pause, setPause] = useState(false);
 
     function handleImg(n) {
 
@@ -16,13 +17,23 @@ function Header(){
         }else{
             setImgToShow(n);
         }
-
-        console.log("cantidad de imgs en array : "+headersData.length);
-        console.log("imagen a mostrar : "+imgToShow);
     }
 
+    // ejecuta la animacion del slider cada 4.5 s
+    useEffect(()=>{
+        const interval = setInterval(()=>{
+            if(!pause) handleImg(imgToShow+1);
+        }, 4500);
+
+        return () => {
+            if(interval){
+                clearInterval(interval);
+            }
+        };
+    });
+
     return(
-        <div className="header-container">
+        <div className="header-container" onMouseEnter={()=>{ setPause(true) }} onMouseLeave={()=>{ setPause(false) }}>
             {
                 headersData.map( (e, i) => 
                     <div
@@ -30,7 +41,8 @@ function Header(){
                         className="header-img"
                         style={{
                             backgroundImage: "url("+require("../assets/imgs/header/"+e.img)+")",
-                            display: imgToShow === i ? "block" : "none"
+                            display: imgToShow === i ? "block" : "none",
+                            backgroundPosition: i === 2 ? "left" : "right"
                         }}
                     />
                 )

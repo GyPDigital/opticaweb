@@ -1,0 +1,103 @@
+
+.container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f7fb;
+}
+
+.Advantage-container{
+    width: 300%;
+    height: auto;
+    display: flex;
+    color: #40433c;
+    justify-content: left;
+    position: relative;
+    margin-left: 0%;
+    transition: margin-left 1s;
+}
+
+.Advantage-item{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    float: left;
+}
+
+.icon-cheked-box{
+    width: 32px;
+    height: 32px;
+    background-image: url("../icons/cheked-box.png");
+    margin: 4px;
+}
+
+.Advantage-text{
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+}
+
+.Advantage-text > h3{
+    margin: 10px 0 ;
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: 1px;
+}
+
+.Advantage-text > p{
+    margin: 10px 0 ;
+    font-family: 'Heebo', sans-serif;
+}
+
+.aplastar{
+    transform: scaleX(0);
+    transition: transform 1s;
+}
+
+.hide-left{
+    /*transform: translateX(-377px);
+    transition: transform 1s;*/
+    animation: move-hide 3s;
+    display: none;
+}
+
+@keyframes move-hide {
+    from{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(-377px);
+        opacity: 0;
+        
+    }
+}
+
+.show{
+    animation: fadein 2s;
+    display: flex;
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+}
+
+
+

@@ -4,12 +4,12 @@
 
 .header-container{
     width: 100%;
-    height: auto;
-    margin-top: 60px;
+    height: 236px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 60px;
     position: relative;
 }
 
@@ -29,6 +29,13 @@
     top: 0;
     z-index: 20;
     /*background-image: url("../imgs/header/chica-con-lentes.jpg");*/
+    animation-duration: 1.5s;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
 }
 
 /******************************************* Botones < > ************************************************/
