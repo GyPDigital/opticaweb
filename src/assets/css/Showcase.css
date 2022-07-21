@@ -58,10 +58,10 @@
     gap: 10px;
 }
 
-/****************************************************************************************************/
+/************************************** Contenedor botones ***********************************************/
 
 .btn-wrap{
-    width: 25%;
+    width: 60px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -73,7 +73,7 @@
     margin: 10px 0;
 }
 
-/****************************************************************************************************/
+/******************************************** botones ****************************************************/
 
 .round-btn{
     /*reset button style*/
@@ -114,7 +114,8 @@
 
 .sc-items-box{
     width: 100%;
-    height: 552px;
+    min-height: 290px;
+    max-height: 560px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -163,3 +164,19 @@
     height: 40px;
     text-align: center;
 }
+
+/****************************************** Preloader ***************************************************/
+
+.loader {
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
