@@ -1,4 +1,5 @@
 import './App.css';
+import AboutUs from './components/AboutUs';
 import Advantage from './components/Advantage';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <Advantage/>
       <Showcase/>
+      <AboutUs/>
     </div>
   );
 }
