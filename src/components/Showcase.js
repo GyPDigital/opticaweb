@@ -39,7 +39,6 @@ function Showcase(){
                     <p>Lo mejor en marcos y monturas para ti</p>
                 </div>
                 <div className="sc-category">
-                    <h3>Categorias</h3>
                     <div className="sc-category-btn">
                         <div className="btn-wrap">
                             <button className="round-btn categ-offer" onClick={()=>{ handleCategory("offer") }}/>
