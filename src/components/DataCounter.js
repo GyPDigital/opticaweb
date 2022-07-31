@@ -96,7 +96,7 @@ function DataCounter(){
 /**************************************************************************************************/
 
     return(
-        <div className="container">
+        <div className="container" style={{backgroundColor: "white"}}>
             <div className="data-counter" onClick={ restartAnimation } ref={ componentRef } >
                 {
                     dataList.map( ( item, i ) =>

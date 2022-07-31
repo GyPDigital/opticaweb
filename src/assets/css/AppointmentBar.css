@@ -1,0 +1,82 @@
+
+
+.appointment-bar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #0084d6;
+    font-family: 'Heebo', sans-serif;
+    margin-bottom: 30px;
+    padding: 35px 0;
+}
+
+/*****************************************************************************************************/
+
+.appointment-bar-img{
+    width: 80px;
+    height: 80px;
+    background-image: url("../icons/calendar-white.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 30px;
+}
+
+/*****************************************************************************************************/
+
+.appointment-bar-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px 0;
+}
+
+.appointment-bar-text > *{
+    text-align: center;
+    margin: 0;
+    margin: 0 30px;
+}
+
+.appointment-txt-thin{
+    font-weight: lighter;
+}
+
+/*****************************************************************************************************/
+
+.appointment-bar-btn{
+    /*reset-btn-style*/
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    /*****************/
+    width: 200px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: white;
+    color: rgb(119, 119, 119);
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 30px;
+}
+
+.icon-whatsapp{
+    width: 30px;
+    height: 30px;
+    background-image: url("../icons/icon-whatsapp.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
