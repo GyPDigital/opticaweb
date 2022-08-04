@@ -1,0 +1,133 @@
+
+
+.container-footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    font-family: 'Heebo', sans-serif;
+    padding: 20px 0;
+    gap: 30px;
+}
+
+/********************************************************************************************************/
+
+.footer-logo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo > img{
+    height: 40px;
+    width: auto;
+    margin: 20px 40px;
+}
+
+.footer-logo > p{
+    margin: 0 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/********************************************************************************************************/
+
+.footer-data{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+}
+
+.footer-list-data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+    gap: 20px;
+}
+
+.footer-list-data > img{
+    width: 20px;
+    height: 20px;
+}
+
+.footer-list-data > p{
+    text-align: center;
+    margin: 0;
+}
+
+
+/********************************************************************************************************/
+
+.footer-social-media{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-social-media-icons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-sm-facebook, .footer-sm-twitter, .footer-sm-youtube, .footer-sm-instagram{
+    /*reset button style*/
+    background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    /*******************/
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-sm-facebook{
+    background-image: url("../icons/face-blue.png");
+}
+
+.footer-sm-twitter{
+    background-image: url("../icons/twitter-blue.png");
+}
+
+.footer-sm-youtube{
+    background-image: url("../icons/youtube-blue.png");
+}
+
+.footer-sm-instagram{
+    background-image: url("../icons/instagram-blue.png");
+}

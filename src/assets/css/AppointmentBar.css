@@ -10,7 +10,6 @@
     justify-content: center;
     background-color: #0084d6;
     font-family: 'Heebo', sans-serif;
-    margin-bottom: 30px;
     padding: 35px 0;
 }
 
@@ -75,7 +74,7 @@
 .icon-whatsapp{
     width: 30px;
     height: 30px;
-    background-image: url("../icons/icon-whatsapp.png");
+    background-image: url("../icons/whatsapp-icon-blue.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
