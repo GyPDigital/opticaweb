@@ -131,3 +131,21 @@
 .footer-sm-instagram{
     background-image: url("../icons/instagram-blue.png");
 }
+
+/*******************************************************************************************************/
+
+.footer-copyright{
+    background-color: whitesmoke;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.footer-copyright > p{
+    margin: 30px, 0;
+    text-align: center;
+}
