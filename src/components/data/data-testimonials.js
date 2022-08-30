@@ -15,7 +15,7 @@ const testimonials = [
         text: "Devido a mi trabajo he tenido problemas en mi visión, por fortuna en Optometry me han acompañado y asesorado muy bien, lo cual les agradezco profundamente.",
         name: "Germán Castañeda",
         profession: "Ingeniero de software",
-        img: "profile-daniel-perez.png"
+        img: "profile-german-cast.png"
     }
 ];
 

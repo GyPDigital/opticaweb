@@ -99,7 +99,7 @@
     background-image: url("../icons/offer.png");
 }
 
-.categ-cheap{
+.categ-classic{
     background-image: url("../icons/decrease.png");
 }
 
@@ -109,6 +109,11 @@
 
 .categ-new{
     background-image: url("../icons/new.png");
+}
+
+.categ-all{
+    background-image: url("../icons/grid.png");
+    background-size: 25px;
 }
 
 /****************************************************************************************************/

@@ -12,7 +12,7 @@ function AboutUs(){
                     <p>Sociosqu tempor rhoncus interdum nunc ornare risus hac. Nostra ut eget cubilia ex mattis nec tempor ante ac rutrum.</p>
                     <div className="about-bottom">
                         <div className="about-blue-box">
-                            <h4>10+</h4>
+                            <h2>10+</h2>
                             <p>Años de experiencia</p>
                         </div>
                         <div className="about-bottom-text">

@@ -2,6 +2,11 @@ import React from "react";
 import "../assets/css/Footer.css";
 
 function Footer(){
+
+    const openSocialMedia = url => {
+        window.open( url, '_blank', 'noopener,noreferrer' );
+    }
+
     return(
         <div className="container-footer">
             <div className="footer">
@@ -26,10 +31,10 @@ function Footer(){
                 <div className="footer-social-media">
                     <h3>Siguenos en nuestras redes</h3>
                     <div className="footer-social-media-icons">
-                        <button className="footer-sm-facebook"/>
-                        <button className="footer-sm-twitter"/>
-                        <button className="footer-sm-youtube"/>
-                        <button className="footer-sm-instagram"/>
+                        <button className="footer-sm-facebook" onClick={ () => openSocialMedia("https://facebook.com") } />
+                        <button className="footer-sm-twitter"  onClick={ () => openSocialMedia("https://twitter.com") } />
+                        <button className="footer-sm-youtube"  onClick={ () => openSocialMedia("https://youtube.com") } />
+                        <button className="footer-sm-instagram"  onClick={ () => openSocialMedia("https://instagram.com") } />
                     </div>
                 </div>
                 <div className="footer-copyright">

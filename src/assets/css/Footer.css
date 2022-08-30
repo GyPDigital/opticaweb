@@ -142,10 +142,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0;
+    gap: 10px;
 }
 
 .footer-copyright > p{
-    margin: 30px, 0;
+    margin: 0;
+    width: 80%;
     text-align: center;
 }
