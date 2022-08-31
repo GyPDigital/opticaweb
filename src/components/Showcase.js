@@ -36,37 +36,25 @@ function Showcase(){
     // catList lista de productos filtrados por la categoria seleccionada
     const [catList, setCatList] = useState([]);
     // preloader muestra una animacion de carga, no hay necesidad pero se ve chevere XD
-    //const [preloader, setPreloader] = useState(false);
-
-    //const [selectedBtn, setSelectedBtn] = useState( [btnOffer=true, btnClassic=false, btnLuxury=false, btnNew=false, btnAll=false] );
+    const [preloader, setPreloader] = useState(false);
 
     function handleCategory(cat){
 
         if(cat === "offer" || cat === "luxury" || cat === "new" || cat === "classic" || cat === "all"){
             setCategory(cat);
+            handlePreloader();
         }else{
             alert("No existe la categoria seleccionada");
         }
     }
 
-    /*
-
-    function handleCategory(cat){ //"#c9d3e5"
-
-        if(cat === "offer" || cat === "luxury" || cat === "new" || cat === "classic" || cat === "all"){
-            // se establece una animacion de 0.5s antes de cargar los nuevos items
-            setPreloader(true);
-            setTimeout(()=>{
-                setCategory(cat);
-                setPreloader(false);
-            }, 500);
-            
-        }else{
-            alert("No existe la categoria seleccionada");
-        }
+    // muestra la animacion de carga durante 0,7 s
+    function handlePreloader(){
+        setPreloader(true);
+        setTimeout(()=>{
+            setPreloader(false);
+        }, 700);
     }
-
-    */
 
     useEffect(()=>{
         // cuando se actualiza el estado categoria, se carga la lista de items a mostrar
@@ -87,9 +75,8 @@ function Showcase(){
                             btnData.map( ( btn, i ) => 
                                 <div className="btn-wrap" key={btn.class+i}>
                                     <button 
-                                        className={ "round-btn " + btn.class }
+                                        className={ category === btn.name ? "round-btn "+btn.class+"-selected" : "round-btn "+btn.class }
                                         onClick={ () => { handleCategory( btn.name ) }}
-                                        style={{ backgroundColor: category === btn.name ? "#c9d3e5" : "white" }}
                                     />
                                     <h5>{ btn.text }</h5>
                                 </div>
@@ -97,11 +84,12 @@ function Showcase(){
                         }
                     </div>
                 </div>
-                <div className="sc-items-box">
+                <div className="sc-items-box" style={{ overflow: preloader ? "hidden" : "scroll" }} >
+                    <div className="loader-container" style={{ display: preloader ? "flex" : "none" }}>
+                        <div className="loader"/>
+                    </div>
                     {
-                        //preloader // carga el preloader entes de mostrar los items
-                        //? <div className="loader"/>
-                  /*:*/ catList.map( (prod, i) =>
+                        catList.map( (prod, i) =>
                             <div className="item" key={"item-"+i}>
                                 <img src={require("../assets/imgs/products/"+prod.img)} alt={prod.alt} />
                                 <div className="item-text">
