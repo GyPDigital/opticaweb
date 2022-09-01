@@ -100,7 +100,7 @@
 }
 
 .categ-offer-selected{
-    background-color: #11449f;
+    background-color: #0084d6;
     background-image: url("../icons/offer-white.png");
 }
 
@@ -109,7 +109,7 @@
 }
 
 .categ-classic-selected{
-    background-color: #11449f;
+    background-color: #0084d6;
     background-image: url("../icons/decrease-white.png");
 }
 
@@ -118,7 +118,7 @@
 }
 
 .categ-luxury-selected{
-    background-color: #11449f;
+    background-color: #0084d6;
     background-image: url("../icons/luxury-white.png");
 }
 
@@ -127,7 +127,7 @@
 }
 
 .categ-new-selected{
-    background-color: #11449f;
+    background-color: #0084d6;
     background-image: url("../icons/new-white.png");
 }
 
@@ -137,7 +137,7 @@
 }
 
 .categ-all-selected{
-    background-color: #11449f;
+    background-color: #0084d6;
     background-image: url("../icons/grid-white.png");
     background-size: 25px;
 }

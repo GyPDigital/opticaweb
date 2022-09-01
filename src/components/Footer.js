@@ -38,8 +38,8 @@ function Footer(){
                     </div>
                 </div>
                 <div className="footer-copyright">
-                    <p>Copyright <strong>©</strong> 2023 Optometry, todos los derechos reservados.</p>
-                    <p>Creado por <a href="www.google.com" target={"_blank"}>G&P Informática y Tecnología</a></p>
+                    <p>Copyright <strong>©</strong> 2023 Optometry, todos los derechos reservados</p>
+                    <p>Creado por <a className="footer-link-GyP" href="www.google.com" target={"_blank"}>G&P Informática y Tecnología</a></p>
                 </div>
             </div>
         </div>

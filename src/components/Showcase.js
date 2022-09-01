@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../assets/css/Showcase.css";
 import products from "./data/data-products";
+import Modal from "./Modal.js";
+import ItemDescription from "./ItemDescription.js";
 
 const btnData = [
     {
@@ -33,11 +35,16 @@ const btnData = [
 function Showcase(){
     // categoria a mostrar, por defecto offer
     const [category, setCategory] = useState("offer");
-    // catList lista de productos filtrados por la categoria seleccionada
+    // lista de productos filtrados por la categoria seleccionada
     const [catList, setCatList] = useState([]);
-    // preloader muestra una animacion de carga, no hay necesidad pero se ve chevere XD
+    // muestra una animacion de carga, no hay necesidad pero se ve chevere XD
     const [preloader, setPreloader] = useState(false);
+    // mostrar ocultar el modal que muestra la descripcion del producto
+    const [modal, setModal] = useState(false);
+    // almacena el codigo del producto a mostrar en el modal
+    const [itemToShow, setItemToShow] = useState("1");
 
+    // cambia la categoria y mientras pasa muestra el preloader
     function handleCategory(cat){
 
         if(cat === "offer" || cat === "luxury" || cat === "new" || cat === "classic" || cat === "all"){
@@ -54,6 +61,12 @@ function Showcase(){
         setTimeout(()=>{
             setPreloader(false);
         }, 700);
+    }
+
+    // se establece el producto a mostrar en el modal y se abre el modal 
+    function showModal (codeProd){
+        setItemToShow(codeProd);
+        setModal(true);
     }
 
     useEffect(()=>{
@@ -90,7 +103,7 @@ function Showcase(){
                     </div>
                     {
                         catList.map( (prod, i) =>
-                            <div className="item" key={"item-"+i}>
+                            <div className="item" key={"item-"+i} onClick={ () => { showModal( prod.codeProd ) } }>
                                 <img src={require("../assets/imgs/products/"+prod.img)} alt={prod.alt} />
                                 <div className="item-text">
                                     <h5>{prod.name}</h5>
@@ -100,6 +113,16 @@ function Showcase(){
                         )
                     }
                 </div>
+                <Modal modalShow={modal} setModalShow={setModal}>
+                    {
+                        /*
+                        <ItemDescription
+                        product={products.find( item => item.codeProd === itemToShow )}
+                        setModal={setModal}
+                    />
+                        */
+                    }
+                </Modal>
             </div>
         </div>
     );
