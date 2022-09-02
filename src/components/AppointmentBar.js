@@ -4,7 +4,7 @@ import "../assets/css/AppointmentBar.css";
 function AppointmentBar(){
 
     const openWhatsapp = () => {
-        window.open("https://web.whatsapp.com/", "_target", "noopener, noreferrer");
+        window.open( "https://wa.me/573118142989?text=Hola,%20quisiera%20agendar%20una%20cita" , "_target", "noopener, noreferrer");
     }
 
     return(

@@ -21,6 +21,16 @@ function App() {
       <Testimonials/>
       <AppointmentBar/>
       <Footer/>
+      {/* WhatsApp icon */}
+      <a
+        href="https://wa.me/573118142989"
+        className="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={require("./assets/icons/whatsapp-icon-white.png")} alt="icono de whatsapp blanco" />
+      </a>
+      {/* WhatsApp icon */}
     </div>
   );
 }

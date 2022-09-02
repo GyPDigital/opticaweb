@@ -69,6 +69,11 @@ function Showcase(){
         setModal(true);
     }
 
+    // numero a formato moneda
+	const toMoney = ( number ) => {
+		return new Intl.NumberFormat("es-CO").format( number );
+	};
+
     useEffect(()=>{
         // cuando se actualiza el estado categoria, se carga la lista de items a mostrar
         setCatList( category === "all" ? products : products.filter(item => item.category === category) );
@@ -107,21 +112,17 @@ function Showcase(){
                                 <img src={require("../assets/imgs/products/"+prod.img)} alt={prod.alt} />
                                 <div className="item-text">
                                     <h5>{prod.name}</h5>
-                                    <p><strong>{prod.price}</strong></p>
+                                    <p><strong>{ "$" + toMoney( prod.price ) }</strong></p>
                                 </div>
                             </div>
                         )
                     }
                 </div>
                 <Modal modalShow={modal} setModalShow={setModal}>
-                    {
-                        /*
-                        <ItemDescription
+                    <ItemDescription
                         product={products.find( item => item.codeProd === itemToShow )}
                         setModal={setModal}
                     />
-                        */
-                    }
                 </Modal>
             </div>
         </div>
