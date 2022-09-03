@@ -96,49 +96,49 @@
 }
 
 .categ-offer{
-    background-image: url("../icons/offer.png");
+    background-image: url("../../icons/offer.png");
 }
 
 .categ-offer-selected{
     background-color: #0084d6;
-    background-image: url("../icons/offer-white.png");
+    background-image: url("../../icons/offer-white.png");
 }
 
 .categ-classic{
-    background-image: url("../icons/decrease.png");
+    background-image: url("../../icons/decrease.png");
 }
 
 .categ-classic-selected{
     background-color: #0084d6;
-    background-image: url("../icons/decrease-white.png");
+    background-image: url("../../icons/decrease-white.png");
 }
 
 .categ-luxury{
-    background-image: url("../icons/luxury.png");
+    background-image: url("../../icons/luxury.png");
 }
 
 .categ-luxury-selected{
     background-color: #0084d6;
-    background-image: url("../icons/luxury-white.png");
+    background-image: url("../../icons/luxury-white.png");
 }
 
 .categ-new{
-    background-image: url("../icons/new.png");
+    background-image: url("../../icons/new.png");
 }
 
 .categ-new-selected{
     background-color: #0084d6;
-    background-image: url("../icons/new-white.png");
+    background-image: url("../../icons/new-white.png");
 }
 
 .categ-all{
-    background-image: url("../icons/grid.png");
+    background-image: url("../../icons/grid.png");
     background-size: 25px;
 }
 
 .categ-all-selected{
     background-color: #0084d6;
-    background-image: url("../icons/grid-white.png");
+    background-image: url("../../icons/grid-white.png");
     background-size: 25px;
 }
 

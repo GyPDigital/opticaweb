@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "../assets/css/Showcase.css";
-import products from "./data/data-products";
+import "../../assets/css/showcase/Showcase.css";
+import products from "../data/data-products";
 import Modal from "./Modal.js";
 import ItemDescription from "./ItemDescription.js";
 
@@ -109,7 +109,7 @@ function Showcase(){
                     {
                         catList.map( (prod, i) =>
                             <div className="item" key={"item-"+i} onClick={ () => { showModal( prod.codeProd ) } }>
-                                <img src={require("../assets/imgs/products/"+prod.img)} alt={prod.alt} />
+                                <img src={require("../../assets/imgs/products/"+prod.img)} alt={prod.alt} />
                                 <div className="item-text">
                                     <h5>{prod.name}</h5>
                                     <p><strong>{ "$" + toMoney( prod.price ) }</strong></p>

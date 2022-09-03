@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/css/Modal.css";
+import "../../assets/css/showcase/Modal.css";
 
 function Modal({ modalShow, setModalShow, title, children }){
 
