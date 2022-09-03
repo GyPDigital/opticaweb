@@ -17,16 +17,18 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    /*gap: 12%;*/
 }
 
 .data-section{
-    width: 50%;
+    width: 150px;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     opacity: 0;
+    font-size: 18px;
 }
 
 .ds-active{

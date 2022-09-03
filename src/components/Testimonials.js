@@ -10,7 +10,7 @@ function Testimonials(){
             <div className="testimonials">
                 <hr />
                 <div className="testimonials-header">
-                    <h5>Testimonios</h5>
+                    <h5 className="section-title">Testimonios</h5>
                     <div className="testimonials-title">
                         <h2>Nuestros Clientes Dicen</h2>
                         <hr />

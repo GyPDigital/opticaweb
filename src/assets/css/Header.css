@@ -1,5 +1,6 @@
 :root{
-    --img-height: 230px;
+    --img-mobil-height: 230px;
+    --img-big-height: 500px;
 }
 
 .header-container{
@@ -17,7 +18,7 @@
 
 .header-img{
     width: 98%;
-    height: var(--img-height);
+    height: 230px;
     color: white;
     border-radius: 5px;
     margin-top: 3px;
@@ -69,12 +70,12 @@
 }
 
 .btn-r{
-    right: 0;
+    right: 0.5%;
     background-image: url("../icons/icon-row-r.png");
 }
 
 .btn-l{
-    left: 0;
+    left: 0.5%;
     background-image: url("../icons/icon-row-l.png");
 }
 
@@ -82,7 +83,7 @@
 
 .list-pagination{
     position: absolute;
-    top: 210px;
+    bottom: 10px;
     z-index: 20;
 }
 
@@ -95,9 +96,31 @@
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
+}
 
-  .active, .dot:hover {
+.active, .dot:hover {
     background-color: #717171;
-  }
+}
 
+
+@media only screen and (min-width: 1020px){
+    
+    .header-container{
+        height: 506px;
+    }
+
+    .header-img{
+        height: 500px;
+    }
+
+    .btn-header{
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+    }
+
+    .dot {
+        width: 15px;
+        height: 15px;
+    }
+}

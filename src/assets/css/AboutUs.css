@@ -5,11 +5,12 @@
     height: auto;
     display: flex;
     flex-direction: column-reverse;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-color: white;
     border-radius: 5px;
-    margin-top: 10px;
+    padding-top: 30px;
 }
 
 /****************************************************************************************************/
@@ -27,16 +28,20 @@
 
 .about-txt > h5{
     margin-bottom: 0;
-    color: rgb(255, 113, 113);
+    margin-top: 30px;
 }
 
 .about-txt > h2{
     margin-bottom: 0;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .about-txt > p{
     color: rgb(49, 49, 49);
     margin-bottom: 0;
+    text-align: justify;
+    padding: 0 20px;
 }
 
 .about-img{
@@ -48,20 +53,21 @@
 /****************************************************************************************************/
 
 .about-bottom{
-    width: 100%;
+    /*width: 100%;*/
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    gap: 10%;
 }
 
 /****************************************************************************************************/
 
 .about-blue-box{
     width: 120px;
-    height: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,6 +77,9 @@
     text-align: center;
     font-family: Helvetica, sans-serif;
     gap: 10px;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 25px;
 }
 
 .about-blue-box > *{
@@ -88,15 +97,12 @@
 }
 
 .about-bottom-text{
-    width: 70%;
-    height: auto;
+    width: 250px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    font-family: 'Heebo', sans-serif;
-    margin-bottom: 20px;
 }
 
 .about-bottom-text > *{
@@ -105,4 +111,48 @@
 
 .about-bottom-text > p{
     color: rgb(49, 49, 49);
+}
+
+.about-bottom-text-section{
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+}
+
+.about-bottom-text-section > h4{
+    margin-bottom: 5px;
+}
+
+.about-bottom-text-section > p{
+    margin-top: 0;
+}
+
+/**************************************************************************************************************/
+
+@media only screen and (min-width: 1020px){
+    .about{
+        flex-direction: row;
+        gap: 3%;
+    }
+
+    .about-txt{
+        width: 35%;
+    }
+
+    .about-txt > h2{
+        text-align: left;
+    }
+
+    .about-txt > p{
+        padding: 0;
+        text-align: left;
+    }
+
+    .about-bottom-text-section{
+        text-align: left;
+    }
+
+    .about-img{
+        width: 45%;
+    }
+
 }

@@ -8,14 +8,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding: 5px 0;
     background: white;
+    gap: 5%;
 }
 
 /************************************************* Img / Info *****************************************************/
 
 .item-desc-img{
-    width: auto;
+    width: 303px; /*width: auto;*/
+    height: 303px; /*auto*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +33,7 @@
 }
 
 .item-desc-info{
-    width: 90%;
+    width: 303px; /*90%*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -56,6 +59,7 @@
 .item-desc-info-text > h3{
     text-align: center;
     margin: 0;
+    font-size: 23px;
 }
 
 .item-desc-info-text > h4{

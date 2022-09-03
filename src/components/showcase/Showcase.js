@@ -83,7 +83,7 @@ function Showcase(){
         <div className="container">
             <div className="showcase">
                 <div className="sc-title">
-                    <h5>Vitrina Virtual</h5>
+                    <h5 className="section-title">Vitrina Virtual</h5>
                     <h1>Nuestros Productos</h1>
                     <p>Lo mejor en marcos y monturas para ti</p>
                 </div>
