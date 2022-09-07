@@ -1,11 +1,6 @@
-:root{
-    --img-mobil-height: 230px;
-    --img-big-height: 500px;
-}
-
 .header-container{
     width: 100%;
-    height: 236px;
+    height: 236px;    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +13,7 @@
 
 .header-img{
     width: 98%;
-    height: 230px;
+    height: 100%; /*height: 230px;*/
     color: white;
     border-radius: 5px;
     margin-top: 3px;
@@ -41,6 +36,20 @@
 
 /******************************************* Botones < > ************************************************/
 
+.wraper-btn-header{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wraper-btn-header-r{ right: 10px; }
+.wraper-btn-header-l{ left: 10px; }
+
 .btn-header{
     /*reset button style*/
     background: none;
@@ -50,7 +59,6 @@
 	cursor: pointer;
 	outline: inherit;
     /*******************/
-    position: absolute;
     top: 95px;
     width: 40px;
     height: 40px;
@@ -58,7 +66,6 @@
     background-size: 20px 20px;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 30;
 }
 
 .btn-header:hover{
@@ -70,12 +77,10 @@
 }
 
 .btn-r{
-    right: 0.5%;
     background-image: url("../icons/icon-row-r.png");
 }
 
 .btn-l{
-    left: 0.5%;
     background-image: url("../icons/icon-row-l.png");
 }
 
@@ -102,7 +107,74 @@
     background-color: #717171;
 }
 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .header-container{
+        height: 306px;
+    }
 
+    .header-img{
+        height: 300px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+    .header-container{
+        height: 406px;
+    }
+
+    .header-img{
+        height: 400px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+    .header-container{
+        height: 506px;
+    }
+
+    .header-img{
+        height: 500px;
+    }
+    .btn-header{
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+    }
+
+    .dot {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .header-container{
+        height: 606px;
+    }
+
+    .header-img{
+        height: 600px;
+    }
+    .btn-header{
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+    }
+
+    .dot {
+        width: 15px;
+        height: 15px;
+    }
+}
+*/
+/*
 @media only screen and (min-width: 1020px){
     
     .header-container{
@@ -124,3 +196,4 @@
         height: 15px;
     }
 }
+*/

@@ -47,8 +47,12 @@ function Header(){
                     />
                 )
             }
-            <button className="btn-header btn-r" onClick={()=>{ handleImg( imgToShow + 1 ) }} />
-            <button className="btn-header btn-l" onClick={()=>{ handleImg( imgToShow - 1 ) }} />
+            <div className="wraper-btn-header wraper-btn-header-r">
+                <button className="btn-header btn-r" onClick={()=>{ handleImg( imgToShow + 1 ) }} />
+            </div>
+            <div className="wraper-btn-header wraper-btn-header-l">
+                <button className="btn-header btn-l" onClick={()=>{ handleImg( imgToShow - 1 ) }} />
+            </div>
             <div className="list-pagination">
                 {
                     headersData.map((e, i) => 
